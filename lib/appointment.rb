@@ -1,13 +1,11 @@
-require 'pry'
-
 class Appointment
   attr_accessor :date, :patient, :doctor
-  @@all = []
 
-  def initialize(patient,doctor,date)
-    @date = date
+  @@all = []
+  def initialize(patient, doctor, date)
     @patient = patient
-    @doctor = doctor
+     @doctor = doctor
+    @date = date
     @@all << self
   end
 
@@ -15,6 +13,4 @@ class Appointment
     @@all
   end
 
-
-
-end
+end 
